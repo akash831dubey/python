@@ -1,0 +1,325 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body
+{
+	overflow-x: hidden;
+}
+
+.sidebox
+{
+	    position: fixed;
+    top: 0;
+    left: 0;
+	    display: inline-block;
+    background: #F2F4F3;
+    width: 22%;
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+    height: 100vh;border-right: 1px solid #d0caca;
+}
+.sidebox .imagebox img {
+    height: 90%;
+    width: 90%;
+}
+.sidebox .textbox h3
+{
+	margin: 1rem 0 0.2rem;
+    color: #40414e;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.textbox button
+{
+	background: #16B550;
+    color: white;
+    padding: 0.5rem 1.1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.interestbox
+{
+	text-align: left;
+    margin: 2rem 0;
+}
+.interestbox h4
+{
+	font-weight: 700;
+    font-size: 1.3rem;
+    color: #2d2929;
+}
+.interestsmallbox
+{
+	    color: white;
+	    background: red;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.5rem;
+    margin: 0.3rem;
+    line-height: 2.5rem;
+}
+
+
+.interestsmallbox:nth-child(2) {
+  background: #E02C2C;
+}
+.interestsmallbox:nth-child(3) {
+  background: #733CE4;
+}
+.interestsmallbox:nth-child(4) {
+  background: #E13DDA;
+}
+.interestsmallbox:nth-child(5) {
+  background: #2196F3;
+}
+
+
+
+.mainbox
+{
+	position: absolute;
+    left: 22%;
+    top: 0;
+	display: inline-block;
+    width: 78%;
+    background: #F2F4F3;
+}
+.eachdiarybox
+{
+	display: inline-block;
+    box-shadow: 0px 0px 4px #a59292;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0.5rem;
+    width: 18rem;
+    background: white;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.cardimgbox img
+{
+	width: 100%;
+    border-radius: 0.5rem;
+}
+.eachdiarybox .cardtextbox .tagbox span
+{
+	color: white;
+    background: #F8236D;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+}
+.eachdiarybox .cardtextbox h6{
+	font-size: 1.1rem;
+    font-weight: 600;
+    color: #252424;
+    line-height: 2;
+}
+.carddetail
+{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardtextbox .carddetail .cardauthor
+{
+	display: inline-flex;
+    align-items: center;
+}
+.cardtextbox .carddetail .cardauthor img
+{
+	    width: 2.5rem;
+    border-radius: 100%;
+}
+.cardtextbox .carddetail .cardauthor p{
+	font-size: 0.9rem;
+    color: #9e9191;
+    margin: 0.5rem;
+    font-weight: 500;
+}
+.carddetail p
+{
+	font-size: 0.8rem;
+    color: grey;
+    font-weight: 500;
+}
+.interesteddiariesscrollpart,.trendingcardscrollpart
+{
+	white-space: nowrap;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.diarytopline
+{
+	display: flex;
+    justify-content: space-between;
+}
+.diarytopline .title
+{
+	display: flex;
+	align-items: center;
+}
+.title h3
+{
+	color: #35354F;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.diarytopline .title button
+{
+	color: #9a8c8c;
+    background: white;
+    border: none;
+    padding: 0rem 1rem;
+    border-radius: 0.7rem;
+    margin-left: 1.5rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px #a39e9e;
+    font-size: 0.8rem;
+    cursor: pointer;
+    height: 2rem;
+}
+.title h3 span{
+	color:#3cdcc9;
+}
+.interesteddiaries
+{
+	padding: 1rem;
+}
+.sidebuttons img
+{
+	width: 2.5rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    filter: opacity(0.5);
+    
+}
+.sidebutttonactive
+{
+	filter: opacity(1)!important;
+}
+.herobox
+{
+	padding: 1rem;
+}
+.herobox .title
+{
+	margin-bottom: 1rem;
+}
+.innerbox
+{
+	text-align: center;
+    padding: 3rem;
+    background: white;
+}
+.innerbox h2
+{
+	color: #535475;
+	font-size: 1.6rem;
+    font-weight: 700;
+}
+.innerbox button
+{
+	background: #16B550;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    margin: 1rem;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+
+.eachtrendingcard
+{
+	display: inline-flex;
+    flex-direction: row;
+    margin: 1rem;
+    width: 49rem;
+    border-radius: 2rem;
+    background: white;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.eachtrendingcard .imagebox img
+{
+	width: 30rem;
+    height: 18rem;
+    border-radius: 1.3rem;
+}
+.eachtrendingcard .textbox
+{
+	display: flex;
+    flex-direction: column;
+    width: 18rem;
+    padding: 1rem;
+}
+.eachtrendingcard .textbox .topline
+{
+	display: flex;
+	align-items: center;
+}
+.eachtrendingcard .textbox .topline .trending{
+	color: #d6094f;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.eachtrendingcard .textbox .topline .date{
+	font-size: 0.7rem;
+    font-weight: 700;
+    color: #4c4444;
+    margin-left: 0.8rem;
+}
+.eachtrendingcard .textbox .heading{
+	font-size: 1.6rem;
+    color: #2A2B4C;
+    font-weight: 700;
+    max-height: 10rem;
+    margin: 0.5rem 0;
+    white-space: normal;
+}
+.eachtrendingcard .textbox .author
+{
+	display: flex;
+}
+.eachtrendingcard .textbox .author img{
+	width: 3rem;
+    border-radius: 100%;
+}
+.eachtrendingcard .textbox .author .details{
+	margin-left: 1rem;
+}
+.eachtrendingcard .textbox .author .details .name{
+	font-size: 0.85rem;
+    font-weight: 700;
+    color: #2b2a2a;
+}
+.eachtrendingcard .textbox .author .details .status
+{
+	font-size: 0.8rem;
+    color: #716b6b;
+    font-weight: 700;
+}
+
+
+
+/*onhover*/
+.eachtrendingcard:hover,.eachdiarybox:hover,.innerbox button:hover
+{
+	transform: scale(1.02);
+}
